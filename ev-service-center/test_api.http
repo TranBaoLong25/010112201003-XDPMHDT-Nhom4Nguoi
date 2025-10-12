@@ -1,0 +1,32 @@
+### Tạo user 1
+POST http://127.0.0.1:5001/register
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "email": "user1@example.com",
+  "password": "123456",
+  "role": "user"
+}
+
+### Tạo user 2
+POST http://127.0.0.1:5001/register
+Content-Type: application/json
+
+{
+  "username": "user2",
+  "email": "user2@example.com",
+  "password": "abcdef",
+  "role": "user"
+}
+
+### Tạo user 3
+POST http://127.0.0.1:5001/register
+Content-Type: application/json
+
+{
+  "username": "staff1",
+  "email": "staff1@example.com",
+  "password": "654321",
+  "role": "staff"
+}
