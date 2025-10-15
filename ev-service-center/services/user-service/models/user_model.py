@@ -1,4 +1,3 @@
-# user_model.py
 class UserModel:
     def __init__(self, username, email, password, role="customer"):
         self.username = username

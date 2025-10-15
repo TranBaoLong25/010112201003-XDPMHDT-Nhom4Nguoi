@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khách hàng - Dashboard</title>
+    <link rel="stylesheet" href="/frontend/css/customer/style.css" />
+  </head>
+  <body>
+    <div id="app" class="customer-dashboard">
+      <header>
+        <h1>Xin chào, Khách hàng <span id="user-name"></span></h1>
+        <nav>
+          <a href="#" id="profile-link">Hồ sơ</a>
+          <a href="#" id="orders-link">Đơn hàng của tôi</a>
+          <button id="logout-btn">Đăng xuất</button>
+        </nav>
+      </header>
+      <main>
+        <section id="summary">
+          <h2>Tổng quan</h2>
+          <div class="card">
+            Đơn hàng đang chờ: <span id="pending-orders">0</span>
+          </div>
+          <div class="card">
+            Thông báo mới: <span id="new-notifications">0</span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="/frontend/Js/script.js"></script>
+  </body>
+</html>

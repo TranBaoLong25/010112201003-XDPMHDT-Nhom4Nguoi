@@ -1,0 +1,108 @@
+/* Áp dụng cho cả login.css và register.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+}
+
+.login-container,
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-box,
+.register-box {
+  background-color: #ffffff;
+  padding: 50px 40px; /* Tăng padding để rộng rãi hơn */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Đổ bóng mềm */
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-box:hover,
+.register-box:hover {
+  transform: translateY(-5px); /* Hiệu ứng nâng nhẹ khi hover */
+}
+
+.login-box h2,
+.register-box h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Input Fields - Sử dụng outline mỏng */
+.login-box input,
+.register-box input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px; /* Bo tròn hơn */
+  box-sizing: border-box;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.login-box input:focus,
+.register-box input:focus {
+  border-color: #007bff; /* Highlight màu xanh khi focus */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Nút Đăng nhập/Đăng ký */
+.login-box button,
+.register-box button {
+  width: 100%;
+  padding: 14px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Màu riêng cho nút Login */
+.login-box button {
+  background-color: #007bff;
+}
+.login-box button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+/* Màu riêng cho nút Register */
+.register-box button {
+  background-color: #28a745;
+}
+.register-box button:hover {
+  background-color: #1e7e34;
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.4);
+}
+
+/* Thông báo và Liên kết */
+#login-error,
+#register-message {
+  /* Giữ nguyên style lỗi, chỉ cần đảm bảo display: block khi có lỗi */
+}
+
+.login-box p a,
+.register-box p a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #007bff;
+}
+.login-box p a:hover,
+.register-box p a:hover {
+  text-decoration: underline;
+}

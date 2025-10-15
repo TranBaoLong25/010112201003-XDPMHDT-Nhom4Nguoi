@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký Tài khoản</title>
+    <link rel="stylesheet" href="/frontend/css/customer/register.css" />
+  </head>
+  <body>
+    <div class="register-container">
+      <div class="register-box">
+        <h2>Tạo Tài khoản Khách hàng</h2>
+
+        <div id="register-message"></div>
+        <form id="register-form">
+          <div>
+            <label for="username">Tên người dùng</label>
+            <input type="text" id="username" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div>
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" required />
+          </div>
+          <div>
+            <label for="confirm-password">Xác nhận Mật khẩu</label>
+            <input type="password" id="confirm-password" required />
+          </div>
+          <button type="submit">Đăng ký</button>
+        </form>
+
+        <p>
+          Đã có tài khoản?
+          <a href="/frontend/customer/login.html">Đăng nhập ngay</a>
+        </p>
+      </div>
+    </div>
+    <script src="/frontend/Js/register.js"></script>
+  </body>
+</html>

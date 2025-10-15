@@ -1,0 +1,90 @@
+/* file: frontend/customer/style.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6f0fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.customer-dashboard {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  border-bottom: 1px solid #c9dff7; /* Đường viền nhẹ */
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  color: #007bff;
+  font-weight: 700;
+}
+
+/* Navigation */
+nav a,
+nav button {
+  margin-left: 15px;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+nav a {
+  color: #007bff;
+  background-color: #f0f7ff;
+}
+nav a:hover {
+  background-color: #c9dff7;
+}
+nav button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+nav button:hover {
+  background-color: #c82333;
+  box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+}
+
+/* Cards */
+#summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 25px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-color: #007bff;
+}
+.card h2 {
+  margin-top: 0;
+  color: #007bff;
+  font-size: 1.5em;
+}
+.card span {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+}
